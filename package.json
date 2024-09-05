@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --watch './**/*.ts' --exec 'NODE_OPTIONS=--loader=ts-node/esm ts-node -r tsconfig-paths/register' index.ts",
-    "build": "tsc",
+    "build": "tsc-esm",
     "start": "node dist/index.js",
     "db:migrate": "npx sequelize-cli db:migrate --config sequelize/config/db.config.js"
   },
@@ -34,6 +34,7 @@
     "node": "20.5.1"
   },
   "devDependencies": {
+    "@digitak/tsc-esm": "^3.1.4",
     "@types/bcrypt": "^5.0.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
