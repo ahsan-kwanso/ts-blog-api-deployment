@@ -1,4 +1,4 @@
-import { sequelize } from "../config/sequelize.ts";
+import { sequelize } from "../config/sequelize";
 import { DataTypes } from "sequelize";
 import { PostInstance } from "../../types/models/post";
 import { IDb } from "../../types/models/models";

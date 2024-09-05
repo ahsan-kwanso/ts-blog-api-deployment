@@ -1,6 +1,6 @@
 import { Request } from "express-validator/lib/base";
 import { URL, URLSearchParams } from "url";
-import paginationConfig from "./pagination.config.ts";
+import paginationConfig from "./pagination.config";
 
 interface PaginationResult {
   pageNumber?: number;
@@ -24,9 +24,9 @@ const validatePagination = (page: number, limit: number): PaginationResult => {
 // Function to generate the URL for the next page, don't use null
 const generateNextPageUrl = (nextPage: number | null, pageSize: number, req: Request): string | null => {
   if (nextPage === null || nextPage === undefined) return null;
-  
+
   const baseUrl = `${req.protocol}://${req.get("host")}${req.originalUrl.split("?")[0]}`;
-  
+
   // Append pagination parameters to the existing query string
   const queryParams = new URLSearchParams(req.query);
   queryParams.set("page", String(nextPage));

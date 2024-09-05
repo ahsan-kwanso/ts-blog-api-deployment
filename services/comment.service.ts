@@ -1,6 +1,6 @@
-import Comment from "../sequelize/models/comment.model.ts";
-import Post from "../sequelize/models/post.model.ts";
-import { ERROR_MESSAGES, CommentStatus } from "../utils/messages.ts";
+import Comment from "../sequelize/models/comment.model";
+import Post from "../sequelize/models/post.model";
+import { ERROR_MESSAGES, CommentStatus } from "../utils/messages";
 import { CommentData, CommentsResult, CommentResponse, Comment as CommentModel } from "../types/comment";
 
 // Function to get the depth of a comment thread

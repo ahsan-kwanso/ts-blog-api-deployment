@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
-import User from "../sequelize/models/user.model.ts";
-import { generateToken } from "../utils/jwt.ts";
-import { AuthStatus } from "../utils/messages.ts";
+import User from "../sequelize/models/user.model";
+import { generateToken } from "../utils/jwt";
+import { AuthStatus } from "../utils/messages";
 import { AuthResult } from "../types/user";
 
 // Function to handle user signup

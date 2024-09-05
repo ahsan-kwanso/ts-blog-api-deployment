@@ -1,5 +1,5 @@
-import User from "../sequelize/models/user.model.ts";
-import { ERROR_MESSAGES, AuthStatus } from "../utils/messages.ts";
+import User from "../sequelize/models/user.model";
+import { ERROR_MESSAGES, AuthStatus } from "../utils/messages";
 import { UserResult, UsersResult } from "../types/user";
 
 // Function to get a user by ID

@@ -1,6 +1,6 @@
 import express, { Router } from "express";
-import { authenticateJWT } from "../middlewares/authmiddleware.ts";
-import { createPost, getPosts, getPostById, updatePost, deletePost, getPostsByTitle } from "../controllers/post.controller.ts";
+import { authenticateJWT } from "../middlewares/authmiddleware";
+import { createPost, getPosts, getPostById, updatePost, deletePost, getPostsByTitle } from "../controllers/post.controller";
 
 import {
   createPostValidationRules,
@@ -9,9 +9,9 @@ import {
   getPostByIdValidationRules,
   searchByTitleValidationRules,
   searchByTitleValidationRules as getPostsValidationRules,
-} from "../validators/post.validator.ts";
+} from "../validators/post.validator";
 
-import { validate } from "../validators/validate.ts";
+import { validate } from "../validators/validate";
 
 const router: Router = express.Router();
 

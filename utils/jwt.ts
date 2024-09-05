@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "./settings.ts";
+import { JWT_SECRET } from "./settings";
 import { Payload } from "../types/module";
 
 export const generateToken = (user: Payload): string => {

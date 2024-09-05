@@ -3,10 +3,10 @@ import {
   getCommentsByPostId as getCommentsByPostIdService,
   updateComment as updateCommentService,
   deleteComment as deleteCommentService,
-} from "../services/comment.service.ts";
+} from "../services/comment.service";
 import { BAD_REQUEST, CREATED, INTERNAL_SERVER_ERROR, UNAUTHORIZED, OK, NOT_FOUND } from "http-status-codes";
 import { Request, Response } from "express";
-import { ERROR_MESSAGES, CommentStatus } from "../utils/messages.ts";
+import { ERROR_MESSAGES, CommentStatus } from "../utils/messages";
 import { CommentResponse } from "../types/comment";
 import { Payload } from "../types/module";
 

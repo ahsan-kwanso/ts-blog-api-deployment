@@ -3,9 +3,9 @@ import {
   getUserById,
   getAllUsers as getAllUsersService,
   getCurrentUser as getCurrentUserService,
-} from "../services/user.service.ts";
+} from "../services/user.service";
 import { INTERNAL_SERVER_ERROR, OK, NOT_FOUND, FORBIDDEN } from "http-status-codes";
-import { AuthStatus, ERROR_MESSAGES } from "../utils/messages.ts";
+import { AuthStatus, ERROR_MESSAGES } from "../utils/messages";
 import { UserResult, UsersResult } from "../types/user";
 
 // Controller function to get a single user by ID

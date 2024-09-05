@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { signUpUser, signInUser } from "../services/auth.service.ts";
+import { signUpUser, signInUser } from "../services/auth.service";
 import { BAD_REQUEST, CREATED, INTERNAL_SERVER_ERROR, UNAUTHORIZED, OK } from "http-status-codes";
-import { ERROR_MESSAGES } from "../utils/messages.ts";
+import { ERROR_MESSAGES } from "../utils/messages";
 import { SignUpRequest, AuthResult, SignInRequest } from "../types/user";
 
 type RequestBody<T> = Request<{}, {}, T>;

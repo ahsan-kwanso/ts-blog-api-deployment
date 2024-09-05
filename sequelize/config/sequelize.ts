@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { Sequelize, Dialect } from "sequelize";
-import configFile from "./db.config.ts";
-import { NODE_ENV } from "../../utils/settings.ts";
+import configFile from "./db.config";
+import { NODE_ENV } from "../../utils/settings";
 dotenv.config();
 
 enum Environment {

@@ -1,11 +1,11 @@
-import Post from "../sequelize/models/post.model.ts";
-import User from "../sequelize/models/user.model.ts";
-import db from "../sequelize/models/index.ts";
+import Post from "../sequelize/models/post.model";
+import User from "../sequelize/models/user.model";
+import db from "../sequelize/models/index";
 import { Request } from "express";
 import { Op } from "sequelize";
-import { validatePagination, generateNextPageUrl } from "../utils/pagination.ts";
-import paginationConfig from "../utils/pagination.config.ts";
-import { ERROR_MESSAGES, PostStatus } from "../utils/messages.ts";
+import { validatePagination, generateNextPageUrl } from "../utils/pagination";
+import paginationConfig from "../utils/pagination.config";
+import { ERROR_MESSAGES, PostStatus } from "../utils/messages";
 import {
   PostAttributes,
   PaginatedPostsResponse,

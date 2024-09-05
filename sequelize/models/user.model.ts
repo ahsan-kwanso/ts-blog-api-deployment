@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { sequelize } from "../config/sequelize.ts";
+import { sequelize } from "../config/sequelize";
 import bcrypt from "bcrypt";
 import { UserInstance } from "../../types/models/user";
 import { IDb } from "../../types/models/models";

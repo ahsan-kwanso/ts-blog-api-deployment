@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "rootDir": "./src", // Assuming your source files are in the 'src' folder.
+    "rootDir": "./", // Assuming your source files are in the 'src' folder.
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "outDir": "./dist",

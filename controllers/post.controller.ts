@@ -8,9 +8,9 @@ import {
   searchPostsByTitle as searchPostsByTitleService,
   getMyPosts as getMyPostsService,
   searchUserPostsByTitle as searchUserPostsByTitleService,
-} from "../services/post.service.ts";
+} from "../services/post.service";
 import { CREATED, INTERNAL_SERVER_ERROR, OK, NOT_FOUND, FORBIDDEN, BAD_REQUEST } from "http-status-codes";
-import { ERROR_MESSAGES, PostStatus } from "../utils/messages.ts";
+import { ERROR_MESSAGES, PostStatus } from "../utils/messages";
 import { PostResult, PostsResult, Post as PostModel } from "../types/post";
 
 // Create a new post

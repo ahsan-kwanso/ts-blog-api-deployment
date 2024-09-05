@@ -1,7 +1,7 @@
 import express, { Express } from "express";
-import router from "./routes/index.ts";
+import router from "./routes/index";
 import cors from "cors";
-import { PORT } from "./utils/settings.ts";
+import { PORT } from "./utils/settings";
 
 const app: Express = express();
 app.get("/", (req, res) => {

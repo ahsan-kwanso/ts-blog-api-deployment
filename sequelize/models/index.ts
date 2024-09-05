@@ -1,8 +1,8 @@
-import { sequelize } from "../config/sequelize.ts";
+import { sequelize } from "../config/sequelize";
 import { Sequelize } from "sequelize";
-import User from "./user.model.ts";
-import Post from "./post.model.ts";
-import Comment from "./comment.model.ts";
+import User from "./user.model";
+import Post from "./post.model";
+import Comment from "./comment.model";
 import { IDb } from "../../types/models/models";
 
 enum DbModelNames {

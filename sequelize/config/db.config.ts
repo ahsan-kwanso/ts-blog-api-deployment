@@ -1,4 +1,4 @@
-import settings from "../../utils/settings.ts";
+import settings from "../../utils/settings";
 
 const config = {
   development: {
