@@ -1,0 +1,19 @@
+will see that ts ignore lines
+will make models in ts, this is i guess the most difficult and important as well because changing my models is creating lot of issues in my services
+will resolve other parts as well
+
+
+add return type to services as well
+
+refactor the code
+further add return types -> doing this after services work move to utils and validators to see if there's any room for improvement, then move to connections and models, after doing all of this move to frontend
+separate the interfaces
+
+
+
+modify the connection
+modify the models accordingly
+test your application as well
+then use eslint to configure more errors
+
+Now I will keep only those requests that I am actually using on frontend, or keep all for practise purposes
