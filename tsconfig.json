@@ -4,7 +4,6 @@
     "module": "ESNext",
     "rootDir": "./", // Assuming your source files are in the 'src' folder.
     "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
     "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
